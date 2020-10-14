@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: Liberation Serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #99ffff;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 16px;
+  color: #000099;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000099;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+</style>
+<body>
+<body style="background-color:AntiqueWhite;">
+ 
+<h1 style="color:Maroon;text-align:center;">Art Gallery</h1>
+<h1 style="color:Red;text-align:center;">Welcome to Art Gallery</h1>
+<div class="navbar">
+  <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
+  <a href="#"><i class="fa fa-fw fa-search"></i> ArtWork</a> 
+  <a href="#"><i class="fa fa-fw fa-shopping-cart"></i> Collection</a> 
+  <a href="#"><i class="fa fa-fw fa-user"></i> Artists</a>
+</div>
+<style>
+* {box-sizing: border-box}
+.mySlides1 {display: none}
+img {vertical-align: left;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: light green;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a light green background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: light green;
+}
+</style>
+</head>
+<body>
+<h2 style="text-align:left">Art Gallery</h2>
+<p></p>
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="https://www.wfgmountainrentals.com/custimages/Art%20Cellar%20Gallery.jpg
+" style=" width:600px height:600px">
+  </div>
+<div class="mySlides1">
+    <img src=" https://i1.wp.com/cdn.whatsuplife.in/gurgaon/blog/2018/05/art-gallery-gurgaon.jpg" style="height:600px">
+  </div>
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1"]
+showSlides(1, 0);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+<footer>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+<div class="bg-img">
+  <form action="/action_page.php" class="container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+  </form>
+</div>
+ <img src="https://myinspiredlifehome.files.wordpress.com/2020/10/img_5057.jpg?w=1024" style="width=600px;">
+<h4><p> To explore more about Art Gallary,visit <a href="#">Registration</a></p></h4>.
+</footer>
+
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: TimesNewRoman;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #ccffff;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+<body style="background-color:AntiqueWhite;">
+<h3><b>Registration</b></h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+  <br> <label for="mobileno">Mobile Number</label>
+    <input type="integer" id="mobileno" name="mobileno" placeholder="Your Mobile Number.."></br>
+
+    <label for="city">City</label>
+    <select id="city" name="city">
+      <option value="amravati">Amravti</option>
+      <option value="aurangabad">Aurangabad</option>
+      <option value="mumbai">Mumbai</option>    
+      <option value="nagpur">Nagpur</option>
+      <option value="pune">Pune</option>
+    </select>
+ <label for="District">District</label>
+    <select id="district" name="district">
+      <option value="andhrapradesh">Andhra Pradesh</option>
+      <option value="Gujarat">Gujrat</option>
+      <option value="maharashtra">Maharashtra</option>    
+      <option value="Rajasthan">Rajasthan</option>
+    </select>
+
+<label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="india">India</option>
+      <option value="australia">Australia</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Address</label>
+    <textarea id="address" name="address" placeholder="Your address.." style="height:100px"></textarea>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<img src="https://tumaloartco.com/wp-content/uploads/2020/04/IMG_5749.jpg" style="height=50px";"width=50px">
+<img src="https://media-cdn.tripadvisor.com/media/photo-s/11/e5/04/43/gallery-wall-at-the-italian.jpg" style="height=50%"><br>
+
+<style>
+body {
+  background-image: url('https://static.vecteezy.com/system/resources/previews/000/618/810/non_2x/vector-gallery-interior-with-empty-frame-on-wall-and-spotlights.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+</style>
+</head>
+<body>
+
+<h1 style="color:Orange;text-align:center;">About Us</h1>
+
+<h2><p  style="color:Black;">Online Art Gallery is an online application, which is used to display and sell art works of artist.<br>
+Art Gallary brings  you an opportunity to  to display and sell art works of artist Online .<br>
+We bring you details of all artwork in our collections and details of exibitions.<br>
+The  Online Art Gallery is updated daily, so the user can view and buy the latest collection of art by the artists.</p></h2>
+
+<section>
+<h2 style="color:Black;">Artworks</h2>
+<details>
+ <summary style="color:Black;">Paintings </summary>
+<ul>
+<li> Sculpture</li>
+<li>Photography</li>
+<li>Drawing</li>
+<li>Work on Paper</li>
+</ul>
+<summary><h3 style="color:Black;">Paintings Categories</h3></summary>
+<ul>
+<li> Everyday life</li>
+<li>Landscape</li>
+<li>Potrait</li>
+<li>Still life</li>
+<li>Street Art</li>
+</ul>
+<summary><h3 style="color:Black;">Paintings Styles</h3></summary>
+<ul>
+<li> Abstract</li>
+<li>Fantasy</li>
+<li>Figurative</li>
+<li>Fine Art</li>
+<li>Semi-abstract</li>
+</ul>
+</details>
+</section>
+<section>
+<h2 style="color:Black;">Collection</h2>
+<details>
+ <summary style="color:Black;">Explore By Collection</summary>
+<ul>
+<li> Abstract</li>
+<li>Indian Traditional</li>
+<li>Black and White</li>
+<li>Colourful</li>
+<li>Landscapes</li>
+</ul>
+</details>
+</section>
+
+<style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 200px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="gallery">
+  <a target="_blank" href="https://images-na.ssl-images-amazon.com/images/I/81VFY5O8NkL._SX355_.jpg.jpg">
+    <img src="https://images-na.ssl-images-amazon.com/images/I/81VFY5O8NkL._SX355_.jpg" alt="Abstract" width="900" height="900">
+  </a>
+  <div class="desc">Abstract art uses visual language of shape, form, color and line to create a composition which may exist with a degree of independence from visual references in the world.</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://images-na.ssl-images-amazon.com/images/I/41YUTlSR%2BQL.jpg">
+    <img src="https://images-na.ssl-images-amazon.com/images/I/41YUTlSR%2BQL.jpg" alt="Abstract" width="600" height="600">
+  </a>
+  <div class="desc">Abstract art uses visual language of shape, form, color and line to create a composition which may exist with a degree of independence from visual references in the world.</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://www.nriol.com/images/glass-paints.jpg.jpg">
+    <img src="https://www.nriol.com/images/glass-paints.jpg" alt="IndianTraditional" width="600" height="600">
+  </a>
+  <div class="desc">Indian painting has a very long tradition and history in Indian art, though because of the climatic conditions very few early examples survive.</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSsLkKZq2I5ioCXH-oN0c0EVN4lFnC8hC7Y6w&usqp=CAU.jpg">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSsLkKZq2I5ioCXH-oN0c0EVN4lFnC8hC7Y6w&usqp=CAU.jpg" alt="Indian Tradition" width="600" height="600">
+  </a>
+<div class="decs">The rich cultural diversity of India is well reflected in the vivid, distinct and enchanting folk art and crafts. Various painting styles are prevalent across various regions, each representing tradition, customs, and ideologies passed on from one generation to other. </div>
+ </div>
+
+<div class="gallery">
+  <a target="_blank" href="https://i.pinimg.com/originals/43/c5/b9/43c5b9084c6f2ee93d602842d51522f4.jpg
+">
+    <img src="https://i.pinimg.com/originals/43/c5/b9/43c5b9084c6f2ee93d602842d51522f4.jpg" alt="Blacknwhite" width="600" height="600">
+  </a>
+  <div class="desc">Artist have created the exploration of one color, examining values changing across a surface, texture, and nuance, expressing a wide variety of emotions, intentions, and meanings in many different forms..</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://i.ytimg.com/vi/2kJVHMAblfk/maxresdefault.jpg">
+    <img src="https://i.ytimg.com/vi/2kJVHMAblfk/maxresdefault.jpg" alt="landscape" width="600" height="600">
+  </a>
+  <div class="desc">Landscape painting, also known as landscape art, is the depiction of landscapes in art—natural scenery such as mountains, valleys, trees, rivers, and forests, especially where the main subject is a wide view with its elements arranged into a coherent composition.</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://www.artzyme.com/images/detailed/3/SJSLRM.jpg">
+    <img src="https://www.artzyme.com/images/detailed/3/SJSLRM.jpg" alt="Stilllife" width="600" height="600">
+  </a>
+  <div class="desc">A still life is a work of art depicting mostly inanimate subject matter, typically commonplace objects which are either natural (food, flowers, dead animals, plants, rocks, shells, etc.) or man-made (drinking glasses, books, vases, jewelry, coins, pipes, etc.).</div>
+</div>
+</body>
+</html>
+
+
+
+
